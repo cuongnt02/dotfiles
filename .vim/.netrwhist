@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/cuongnt02/devel/graphql/homehub-server/src'
+let g:netrw_dirhist_2='/home/cuongnt02/.local'
+let g:netrw_dirhist_1='/home/cuongnt02/devel/machine-learning/linear_regression'
+let g:netrw_dirhist_0='/home/cuongnt02/devel/c/exercises/ansi_c'
+let g:netrw_dirhist_9='/home/cuongnt02/devel/c/exercises'
+let g:netrw_dirhist_8='/home/cuongnt02/devel/c/exercises/ansi_c'
+let g:netrw_dirhist_7='/home/cuongnt02/documents/texts/projects'
+let g:netrw_dirhist_6='/home/cuongnt02/documents/texts'
+let g:netrw_dirhist_5='/home/cuongnt02/documents/texts/projects'
+let g:netrw_dirhist_4='/home/cuongnt02/documents/texts/research/research_term0624.md'

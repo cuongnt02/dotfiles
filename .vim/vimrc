@@ -1,0 +1,73 @@
+set rtp+=/usr/bin/fzf
+
+colorscheme gruvbox
+
+"Lightline configuration
+let g:lightline = {
+			\ 'colorscheme': 'gruvbox',
+			\}
+set background=dark
+
+"Enable statusline
+set laststatus=2
+
+"General config
+set nocompatible
+set noshowmode
+syntax on
+filetype plugin on
+set path+=**
+set wildmenu
+set nu
+set relativenumber
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nowrap
+set noswapfile
+set undodir="/home/everblue/vim/undodir"
+set undofile
+set incsearch
+set nohlsearch
+set termguicolors
+set scrolloff=8
+set isfname+="@-@"
+set updatetime=50
+set colorcolumn="80"
+set signcolumn="yes"
+set splitright
+
+
+"Custom functions
+
+function! NetRWMapping()
+	nmap <buffer> L <CR>:Lexplore<CR>
+	nmap <buffer> <Leader>dd :Lexplore<CR>
+	nmap <buffer> <F5> ma:argdo tabnew<CR>
+endfunction
+
+augroup netrw_mapping
+	autocmd!
+	autocmd filetype netrw call NetRWMapping()
+augroup END
+
+"NetRW
+let g:netrw_preview=1
+let g:netrw_winsize=30
+let g:netrw_keepdir=0
+
+
+"Remaps
+nnoremap <C-j> :tabnext<CR>
+nnoremap <C-k> :tabprevious<CR>
+let mapleader="\<Space>"
+nnoremap <Leader>pv :Lex<CR>
+nnoremap <Leader>re :Re<CR>
+nnoremap <F5> :UndoTreeToggle<CR>
+nnoremap <Leader>pf :FZF<CR>
+tnoremap <Esc> <C-w>N
+" Nice for future references
+" nnoremap <Leader>pe :vert ter ++noclose jupyter console &<CR><C-w>h<CR>
+
