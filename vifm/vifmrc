@@ -178,7 +178,7 @@ command! reload :write | restart full
 " program.  There is also %FOREGROUND, which is useful for entering passwords.
 
 " Pdf
-filextype {*.pdf},<application/pdf> firefox, zathura %c %i, apvlv %c, xpdf %c
+filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " PostScript
@@ -194,6 +194,9 @@ filextype {*.djvu},<image/vnd.djvu>
         \ zathura %f,
         \ {View in apvlv}
         \ apvlv %f,
+
+" Epub
+filextype {*.epub}, zathura %f &
 
 " Midi
 filetype {*.mid,*.kar}
